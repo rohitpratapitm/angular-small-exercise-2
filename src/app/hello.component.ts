@@ -9,8 +9,9 @@ import { Employee } from './employee.model';
 })
 export class HelloComponent  {
   private _employee: Employee;
+  
   @Input() set employee(employee: Employee) {
-    console.log('changed happen');
+    // console.log('changed happen');
     this._employee = Object.assign({}, employee);
   }
   get employee(): Employee {

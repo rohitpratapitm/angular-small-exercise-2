@@ -9,8 +9,8 @@ import { Employee } from './employee.model';
 export class AppComponent  {
   name = 'Angular';
   employee: Employee = {name: 'John', id : 2};
-   setEmployeeName() {
-    
+
+   setEmployee() {  
     this.employee.name = 'new name';
     this.employee.id=22;
     }
